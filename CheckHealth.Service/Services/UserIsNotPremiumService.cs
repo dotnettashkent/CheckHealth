@@ -1,5 +1,4 @@
-﻿using CheckHealth.DAL.IRepositories;
-using CheckHealth.DAL.Repositories;
+﻿using CheckHealth.DAL.Repositories;
 using CheckHealth.Domain.Entities;
 using CheckHealth.Domain.Enums;
 using CheckHealth.Service.DTOs;
@@ -29,11 +28,11 @@ namespace CheckHealth.Service.Services
             {
                 CreatedAt = DateTime.Now,
                 UserName = userIsNotPremiumDto.UserName,
-                Age= userIsNotPremiumDto.Age,
-                Gender= userIsNotPremiumDto.Gender,
-                Height= userIsNotPremiumDto.Height,
-                Password= userIsNotPremiumDto.Password,
-                Weight= userIsNotPremiumDto.Weight,
+                Age = userIsNotPremiumDto.Age,
+                Gender = userIsNotPremiumDto.Gender,
+                Height = userIsNotPremiumDto.Height,
+                Password = userIsNotPremiumDto.Password,
+                Weight = userIsNotPremiumDto.Weight,
                 IsPremium = userIsNotPremiumDto.IsPremium
             };
 

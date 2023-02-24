@@ -28,12 +28,12 @@ namespace CheckHealth.Service.Services
             {
                 CreatedAt = DateTime.Now,
                 userRole = UserRole.Admin,
-                Email= adminDto.Email,
-                FirstName= adminDto.FirstName,
-                LastName= adminDto.LastName,
-                Password= adminDto.Password,
-                PhoneNumber= adminDto.PhoneNumber,
-                UserName= adminDto.UserName
+                Email = adminDto.Email,
+                FirstName = adminDto.FirstName,
+                LastName = adminDto.LastName,
+                Password = adminDto.Password,
+                PhoneNumber = adminDto.PhoneNumber,
+                UserName = adminDto.UserName
             };
 
             var result = await adminRepository.CreateAsync(newUser);

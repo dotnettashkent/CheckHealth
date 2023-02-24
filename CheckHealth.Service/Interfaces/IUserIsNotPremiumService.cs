@@ -1,11 +1,6 @@
 ﻿using CheckHealth.Domain.Entities;
 using CheckHealth.Service.DTOs;
 using CheckHealth.Service.Helpers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CheckHealth.Service.Interfaces
 {
