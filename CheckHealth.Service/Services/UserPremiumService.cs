@@ -1,6 +1,5 @@
 ﻿using CheckHealth.DAL.Repositories;
 using CheckHealth.Domain.Entities;
-using CheckHealth.Domain.Enums;
 using CheckHealth.Service.Helpers;
 using CheckHealth.Service.Interfaces;
 
@@ -29,20 +28,20 @@ namespace CheckHealth.Service.Services
                 CreatedAt = DateTime.Now,
                 SleepTime = userPremiumDto.SleepTime,
                 Activity = userPremiumDto.Activity,
-                Age= userPremiumDto.Age,
-                EatType= userPremiumDto.EatType,
-                Gender= userPremiumDto.Gender,
+                Age = userPremiumDto.Age,
+                EatType = userPremiumDto.EatType,
+                Gender = userPremiumDto.Gender,
                 Heartrate = userPremiumDto.Heartrate,
-                Height= userPremiumDto.Height,
-                IsPremium= userPremiumDto.IsPremium,
-                PaymentType= userPremiumDto.PaymentType,
-                ReadingBook= userPremiumDto.ReadingBook,
-                ShowerTime= userPremiumDto.ShowerTime,
+                Height = userPremiumDto.Height,
+                IsPremium = userPremiumDto.IsPremium,
+                PaymentType = userPremiumDto.PaymentType,
+                ReadingBook = userPremiumDto.ReadingBook,
+                ShowerTime = userPremiumDto.ShowerTime,
                 UsePhone = userPremiumDto.UsePhone,
                 UserName = userPremiumDto.UserName,
-                Walking = userPremiumDto.Walking ,
-                Water = userPremiumDto.Water ,
-                Weight= userPremiumDto.Weight,
+                Walking = userPremiumDto.Walking,
+                Water = userPremiumDto.Water,
+                Weight = userPremiumDto.Weight,
             };
 
             var result = await userPremiumRepository.CreateAsync(newUser);
@@ -147,7 +146,7 @@ namespace CheckHealth.Service.Services
             user.ShowerTime = userPremiumDto.ShowerTime;
             user.Weight = userPremiumDto.Weight;
             user.Height = userPremiumDto.Height;
-            
+
             var result = await userPremiumRepository.UpdateAsync(user);
 
             return new GenericResponse<UserPremium>

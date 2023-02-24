@@ -42,7 +42,7 @@ namespace CheckHealth.Presentation.UserInterfaces
             premium.PaymentType = Domain.Enums.Payment.AnorBank;
 
             Console.Write("Enter the user's reading time (in minutes per day): ");
-            premium.ReadingBook= (Console.ReadLine());
+            premium.ReadingBook = (Console.ReadLine());
 
             Console.Write("Enter the user's shower time (in minutes): ");
             premium.ShowerTime = int.Parse(Console.ReadLine());

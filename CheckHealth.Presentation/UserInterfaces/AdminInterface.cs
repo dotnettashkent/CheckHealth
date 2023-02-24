@@ -1,11 +1,5 @@
 ﻿using CheckHealth.Service.DTOs;
 using CheckHealth.Service.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Transactions;
 
 namespace CheckHealth.Presentation.UserInterfaces
 {
@@ -31,7 +25,7 @@ namespace CheckHealth.Presentation.UserInterfaces
             adminService.CreateAsync(admin);
             Console.WriteLine("Succesfully....");
         }
-        public void adminUpdate() 
+        public void adminUpdate()
         {
             Console.WriteLine("Enter your user-name");
             admin.UserName = Console.ReadLine();
@@ -46,12 +40,12 @@ namespace CheckHealth.Presentation.UserInterfaces
             Console.WriteLine("Enter your last name");
             admin.LastName = Console.ReadLine();
             Console.WriteLine("Enter updated id...");
-            int id  = int.Parse(Console.ReadLine());
+            int id = int.Parse(Console.ReadLine());
             Console.WriteLine();
             adminService.UpdateAsync(id, admin);
             Console.WriteLine("Succesfully");
         }
-        public void adminDelete() 
+        public void adminDelete()
         {
             Console.WriteLine("ENter deleted id ...");
             int id = int.Parse(Console.ReadLine());
@@ -69,7 +63,7 @@ namespace CheckHealth.Presentation.UserInterfaces
             }
             else
             {
-                foreach(var user in all) 
+                foreach (var user in all)
                 {
                     Console.WriteLine($"ID: {user.Id}, Name: {user.FirstName}, Email: {user.Email} , User password {user.Password} ");
                 }
